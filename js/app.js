@@ -60,18 +60,18 @@ if (
 ) {
   $('p').text("O WINS!");
   $('p').css("color", "orange");
-// } else if (
-//   ($('#one').text() === 'X' || 'O') &&
-//   ($('#two').text() === 'X' || 'O') &&
-//   ($('#three').text() === 'X' || 'O') &&
-//   ($('#four').text() === 'X' || 'O') &&
-//   ($('#five').text() === 'X' || 'O') &&
-//   ($('#six').text() === 'X' || 'O') &&
-//   ($('#seven').text() === 'X' || 'O') &&
-//   ($('#eight').text() === 'X' || 'O') &&
-//   ($('#nine').text() === 'X' || 'O')
-// ) {
-//   $('p').text("-DRAW-");
-//   $('p').css("color", "grey");
+} else if (
+  ($('#one').text() !== '') &&
+  ($('#two').text() !== '') &&
+  ($('#three').text() !== '') &&
+  ($('#four').text() !== '') &&
+  ($('#five').text() !== '') &&
+  ($('#six').text() !== '') &&
+  ($('#seven').text() !== '') &&
+  ($('#eight').text() !== '') &&
+  ($('#nine').text() !== '')
+) {
+  $('p').text("-DRAW-");
+  $('p').css("color", "grey");
 }
 };
