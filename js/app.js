@@ -37,28 +37,41 @@ $(document).ready(function() {
   }
 });
 
-// function checkWinner() {
-// if (
-//   $('#one').text() && $('#two').text() && $('#three').text() === 'X'||
-//   $('#one').text() && $('#four').text() && $('#seven').text() === 'X' ||
-//   $('#one').text() && $('#five').text() && $('#nine').text() === 'X' ||
-//   $('#two').text() && $('#five').text() && $('#eight').text() === 'X' ||
-//   $('#three').text() && $('#six').text() && $('#nine').text() === 'X' ||
-//   $('#four').text() && $('#five').text() && $('#six').text() === 'X' ||
-//   $('#seven').text() && $('#eight').text() && $('#nine').text() === 'X'
-// ) {
-//   $('p').text("X WINS!");
-//   $('p').css("color", "pink");
+function checkWinner() {
+if (
+  $('#one').text() === 'X' && $('#two').text() === 'X' && $('#three').text() === 'X'||
+  $('#one').text() === 'X' && $('#four').text() === 'X' && $('#seven').text() === 'X' ||
+  $('#one').text() === 'X' && $('#five').text() === 'X' && $('#nine').text() === 'X' ||
+  $('#two').text() === 'X' && $('#five').text() === 'X' && $('#eight').text() === 'X' ||
+  $('#three').text() === 'X' && $('#six').text() === 'X' && $('#nine').text() === 'X' ||
+  $('#four').text() === 'X' && $('#five').text() === 'X' && $('#six').text() === 'X' ||
+  $('#seven').text() === 'X' && $('#eight').text() === 'X' && $('#nine').text() === 'X'
+) {
+  $('p').text("X WINS!");
+  $('p').css("color", "pink");
+} else if (
+  $('#one').text() === 'O' && $('#two').text() === 'O' && $('#three').text() === 'O'||
+  $('#one').text() === 'O' && $('#four').text() === 'O' && $('#seven').text() === 'O' ||
+  $('#one').text() === 'O' && $('#five').text() === 'O' && $('#nine').text() === 'O' ||
+  $('#two').text() === 'O' && $('#five').text() === 'O' && $('#eight').text() === 'O' ||
+  $('#three').text() === 'O' && $('#six').text() === 'O' && $('#nine').text() === 'O' ||
+  $('#four').text() === 'O' && $('#five').text() === 'O' && $('#six').text() === 'O' ||
+  $('#seven').text() === 'O' && $('#eight').text() === 'O' && $('#nine').text() === 'O'
+) {
+  $('p').text("O WINS!");
+  $('p').css("color", "orange");
 // } else if (
-//   $('#one').text() && $('#two').text() && $('#three').text() === 'O'||
-//   $('#one').text() && $('#four').text() && $('#seven').text() === 'O' ||
-//   $('#one').text() && $('#five').text() && $('#nine').text() === 'O' ||
-//   $('#two').text() && $('#five').text() && $('#eight').text() === 'O' ||
-//   $('#three').text() && $('#six').text() && $('#nine').text() === 'O' ||
-//   $('#four').text() && $('#five').text() && $('#six').text() === 'O' ||
-//   $('#seven').text() && $('#eight').text() && $('#nine').text() === 'O'
+//   ($('#one').text() === 'X' || 'O') &&
+//   ($('#two').text() === 'X' || 'O') &&
+//   ($('#three').text() === 'X' || 'O') &&
+//   ($('#four').text() === 'X' || 'O') &&
+//   ($('#five').text() === 'X' || 'O') &&
+//   ($('#six').text() === 'X' || 'O') &&
+//   ($('#seven').text() === 'X' || 'O') &&
+//   ($('#eight').text() === 'X' || 'O') &&
+//   ($('#nine').text() === 'X' || 'O')
 // ) {
-//   $('p').text("O WINS!");
-//   $('p').css("color", "orange");
-// }
-// };
+//   $('p').text("-DRAW-");
+//   $('p').css("color", "grey");
+}
+};
