@@ -44,6 +44,7 @@ if (
   $('#one').text() === 'X' && $('#five').text() === 'X' && $('#nine').text() === 'X' ||
   $('#two').text() === 'X' && $('#five').text() === 'X' && $('#eight').text() === 'X' ||
   $('#three').text() === 'X' && $('#six').text() === 'X' && $('#nine').text() === 'X' ||
+  $('#three').text() === 'O' && $('#five').text() === 'O' && $('#seven').text() === 'X' ||
   $('#four').text() === 'X' && $('#five').text() === 'X' && $('#six').text() === 'X' ||
   $('#seven').text() === 'X' && $('#eight').text() === 'X' && $('#nine').text() === 'X'
 ) {
@@ -55,6 +56,7 @@ if (
   $('#one').text() === 'O' && $('#five').text() === 'O' && $('#nine').text() === 'O' ||
   $('#two').text() === 'O' && $('#five').text() === 'O' && $('#eight').text() === 'O' ||
   $('#three').text() === 'O' && $('#six').text() === 'O' && $('#nine').text() === 'O' ||
+  $('#three').text() === 'O' && $('#five').text() === 'O' && $('#seven').text() === 'O' ||
   $('#four').text() === 'O' && $('#five').text() === 'O' && $('#six').text() === 'O' ||
   $('#seven').text() === 'O' && $('#eight').text() === 'O' && $('#nine').text() === 'O'
 ) {
